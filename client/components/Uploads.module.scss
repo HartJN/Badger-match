@@ -1,0 +1,35 @@
+@use '../styles/theme';
+
+.heading {
+  font-size: 36px;
+  color: rgb(130, 130, 130);
+  text-align: center;
+}
+
+.uploadsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.containerOne {
+order: 1;
+padding-right: 20px;
+}
+
+.containerTwo {
+order: 2;
+padding: 10px;
+color: rgb(130, 130, 130);
+}
+
+.image {
+  border-radius: 20px;
+  border-color: none;
+  border-style: none;
+  width: 400px;
+}

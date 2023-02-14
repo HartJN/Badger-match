@@ -1,0 +1,62 @@
+@use './theme';
+
+html,
+body {
+  font-family: theme.$font-body; color: theme.$text-black;
+  background-color: theme.$white; margin: 0px;
+}
+
+p { margin: 0px; }
+
+a { text-decoration: none; color: theme.$text-black; cursor: pointer; }
+
+.animalCards {
+  display:flex;
+  position: relative;
+  justify-content: center;
+  
+}
+
+.pickButton {
+  background-color:#EC9F29; 
+  border-radius:5px; 
+  border-color:#FFE298; 
+  padding:1em;
+  position: center;
+  margin: auto
+}
+
+.pickButton:hover {
+  transform: translateY(-3px); transition-duration: 200ms;
+  box-shadow: theme.$shadow; opacity: 0.8;
+}
+
+.animalTileWithButton{
+  // display:block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin:20px;
+  align-items: center;
+}
+
+.pickButtonContainer{
+  display:flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.refreshButton {
+  background-color:#FFD05A; 
+  border-radius:5px; 
+  border-color:#FFE298; 
+  padding:1em;
+  position: center;
+  margin: auto
+}
+
+.refreshButton:hover {
+  transform: translateY(-3px); transition-duration: 200ms;
+  box-shadow: theme.$shadow; opacity: 0.8;
+}

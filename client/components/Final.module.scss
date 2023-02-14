@@ -1,0 +1,34 @@
+@use '../styles/theme';
+
+.heading {
+  text-align: center;
+  margin: 32px; font-size: 2.5rem;
+  @media only screen and (max-width: 1199px) { font-size: 2rem; }
+  @media only screen and (max-width: 767px) { font-size: 1.5rem; }
+}
+
+.form { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+.buttonFriend, .buttonFoe {
+  margin: 20px; padding: 16px 24px 16px 24px; cursor: pointer; background-color: theme.$bright;  border: 0; border-radius: 8px; box-shadow: theme.$shadow; font-size: 1.5rem; font-weight: bold; transition-duration: 200ms; width: 13rem; height: auto; color: white;
+}
+
+
+.buttonFriend:hover, .buttonFoe:hover {
+  transform: translateY(-3px); transition-duration: 200ms;
+  box-shadow: theme.$shadow;
+}
+
+.buttonFriend {
+  background-color: #5ed910;
+}
+
+.buttonFoe {
+  background-color: #f74010;
+}

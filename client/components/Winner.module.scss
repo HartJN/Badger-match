@@ -1,0 +1,33 @@
+@use '../styles/theme';
+
+
+.heading {
+  text-align: center;
+  margin: 32px; font-size: 2.5rem;
+  @media only screen and (max-width: 1199px) { font-size: 2rem; }
+  @media only screen and (max-width: 767px) { font-size: 1.5rem; }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.button {
+  margin: 16px; padding: 16px 24px 16px 24px; cursor: pointer;
+  background-color: theme.$bright;  border: 0; border-radius: 8px;
+  box-shadow: theme.$shadow;
+  color: theme.$black; font-size: 1.5rem; font-weight: bold;
+  transition-duration: 200ms;
+}
+
+.button:hover {
+  transform: translateY(-3px); transition-duration: 200ms;
+  box-shadow: theme.$shadow;
+}
+
+.disposition {
+  color: theme.$bright;
+}
